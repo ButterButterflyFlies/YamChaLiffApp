@@ -1,21 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '../components/HelloWorld.vue'
-import AddItem from "../components/AddItem.vue";
+// import AddItem from "../components/UpdateOrderComponents/UpdateOrderPage.vue";
+import UpdateOrder from "../components/UpdateOrder.vue";
 import Menu from "../components/Menu.vue";
 
 Vue.use(Router)
 export default new Router({
+  mode: "history",
   routes: [
-    {
-      path: "/",
-      name: "hello",
-      component: HelloWorld
-    },
     {
       path: "/product",
       name: "product",
-      component: AddItem
+      component: UpdateOrder
     },
     {
       path: "/menu",
